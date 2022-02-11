@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quantico', sans-serif;
+}
+
+#navbarSupportedContent ul li{
+    padding: 0px 25px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* These are custom colors for our website. */
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+/* Navbar */
+
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar-toggler{
+    background-color: rgb(30, 56, 118);
+}
+
+/* Main Header */
+
+.main_header_left{
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main_header_left p{
+    font-size: 2rem;
+}
+
+.main_header_left h1{
+    font-size: 3.6rem;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.btn{
+    border: none;
+    font-size: 1.5rem;
+    margin: 0px 10px;
+    border-radius: 5px;
+    padding: 7px 7px;
+}
+
+.btn:hover{
+    color: var(--main-color);
+}
+
+.main_header_right{
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Weather Page styling starts */
+
+.form_content{
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 5rem;
+}
+
+.form_content input{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #1e272e;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+}
+
+::placeholder{
+    color:whitesmoke;
+}
+
+.form_content input[type="submit"]{
+    position: absolute;
+    width: 20%;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: var(--main-color);
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+
+.form_content input[type="submit"]:hover{
+    color: var(--main-color);
+    background-color: whitesmoke;
+}
+
+
+.tempInformation{
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #1a252d;
+    border-radius: 1rem;
+    font-family: 'Quantico', sans-serif;
+}
+
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #1e272e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+
+.top_layer p{
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.top_layer .day_month{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.day_month #today_date, #today_month{
+    padding: 0 5px;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    background-color: #1e272e;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    border-radius: 1rem;
+}
+
+#city_name{
+    padding: 2rem 0;
+    color: #0097e6;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: center;
+    color:whitesmoke;
+}
+
+.main_layer .middle_layer p{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+sup{
+    font-size: 3.5rem;
+    margin-top: -2rem;
+}
+
+.hide_data{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+/* Weather page styling end */
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 5rem;  /*line-height gives height to footer as well as content comes to center vertically*/
+}
+
+
+/* Responsive Code */
+
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    /* Weather Page Responsive */
+
+    .form_content{
+        width: auto;
+    }
+
+    .tempInformation{
+        width: auto;
+    }
+
+    .form_content input[type="submit"]{
+        width: auto;
+    }
+
+    /* About Page Responsive */
+
+    .main_header_left h1{
+        margin: 3rem 0;
+        font-size: 3rem;
+
+    }
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- head Links --}}
+    {{>headLinks}}
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div>
+
+                    <!-- Left Side -->
+                    <div class="col-md-10 col-12 mx-auto main_header_right">
+
+                        <figure class="mx-auto">
+                            <img src="./images/404image.png" alt="Not Found" class="image-fluid">
+                        </figure>
+                        <h1 class="mx-auto">{{errorMessage}}</h1>
+                        <div class="mx-auto"><a href="/"><button class="btn">Go Back</button></a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer Section -->
+    {{>footer}}
+
+</body>
+</html>

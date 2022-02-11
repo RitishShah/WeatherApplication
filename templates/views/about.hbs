@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- head Links --}}
+    {{>headLinks}}
+
+    <style>
+        .social{
+            display: flex;
+            flex-direction: row;
+            margin: 0px 10px;
+        }
+
+        .social .btn {
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+
+                    <!-- Left Side -->
+                    <div class="col-md-6 col-12 main_header_right">
+
+                        <figure class="mx-auto">
+                            <img src="./images/About.jpg" alt="Not Found" class="image-fluid">
+                        </figure>
+
+                    </div>
+
+                    <!-- Right-Side -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>This is the About Section.</p>
+                        <h1>Here are our Social Media Platforms For Query.</h1>
+                        <div class="social">
+                            <a href="https:/www.instagram.com"><button class="btn">Instagram</button></a>
+                            <a href="https:/www.facebook.com"><button class="btn">Facebook</button></a>
+                            <a href="https:/www.linkedin.com"><button class="btn">Linkedin</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer Section -->
+    {{>footer}}
+
+</body>
+</html>
